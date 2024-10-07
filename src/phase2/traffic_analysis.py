@@ -1,0 +1,1 @@
+# Script for capturing and analyzing network traffic, specifically focusing on botnet-related traffic patterns.

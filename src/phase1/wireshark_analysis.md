@@ -29,7 +29,7 @@ The following table shows a detailed breakdown of key TCP segments captured in W
 | 106        | 9.448733  | 192.168.1.12 | 192.168.1.100| TCP      | 79     | 20 → 80 [SYN] Seq=0 Win=8192 Len=25 [TCP segment of a reassembled PDU] |
 
 ### Screenshot: TCP Segments
-![TCP Segments](phase1/screenshots/wireshark_tcp_segments.png)
+![TCP Segments](screenshots/wireshark_tcp_segments.png)
 
 ---
 
@@ -42,7 +42,7 @@ Each bot transmitted its own unique command to the C2 server. These commands wer
 These commands were sent over TCP, providing reliable delivery, and were reassembled in Wireshark for further analysis.
 
 ### Screenshot: Bot Commands Log
-![Bot Commands Log](phase1/screenshots/python_script_bot_commands_log.png)
+![Bot Commands Log](screenshots/python_script_bot_commands_log.png)
 
 ---
 
@@ -53,7 +53,7 @@ Wireshark’s **Follow TCP Stream** feature was used to capture and analyze the 
 This stream captured the communication between **Bot 192.168.1.10** and the C2 server. The payload carried the command to initiate a Distributed Denial of Service (DDoS) attack.
 
 #### Screenshot:
-![DDoS Attack Command](phase1/screenshots/wireshark_follow_tcp_stream_ddos_attack.png)
+![DDoS Attack Command](screenshots/wireshark_follow_tcp_stream_ddos_attack.png)
 
 ---
 
@@ -61,7 +61,7 @@ This stream captured the communication between **Bot 192.168.1.10** and the C2 s
 This stream showed **Bot 192.168.1.11** sending the `Steal data` command to the C2 server. The command is clearly visible in the payload, indicating that the bot is executing a data exfiltration task.
 
 #### Screenshot:
-![Steal Data Command](phase1/screenshots/wireshark_follow_tcp_stream_steal_data.png)
+![Steal Data Command](screenshots/wireshark_follow_tcp_stream_steal_data.png)
 
 ---
 
@@ -69,7 +69,7 @@ This stream showed **Bot 192.168.1.11** sending the `Steal data` command to the 
 In this stream, **Bot 192.168.1.12** issued the `Download malware` command to the C2 server, indicating that it is attempting to retrieve and install malicious software.
 
 #### Screenshot:
-![Download Malware Command](phase1/screenshots/wireshark_follow_tcp_stream_download_malware.png)
+![Download Malware Command](screenshots/wireshark_follow_tcp_stream_download_malware.png)
 
 ---
 
